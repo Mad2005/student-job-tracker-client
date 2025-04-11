@@ -1,70 +1,159 @@
-# Getting Started with Create React App
+# 🎓 Student Job Tracker – Fullstack Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository consists of both the **Frontend** and **Backend** for the **Student Job Tracker** project.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Live Demo
 
-### `npm start`
+- **Frontend (Vercel):** [Click to Open](https://student-job-tracker-client.vercel.app/)
+- **Backend (Render):** [Click to Open](https://student-job-tracker-server1.onrender.com)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📂 Project Structure
 
-### `npm test`
+```
+student-job-tracker/
+├── frontend/          # React (Vite) + TailwindCSS
+└── backend/           # Express.js + MongoDB
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧩 Frontend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React.js
+- Vite
+- TailwindCSS
+- Axios
+- Vercel (Deployment)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation & Setup
 
-### `npm run eject`
+```bash
+git clone https://github.com/your-username/student-job-tracker-frontend.git
+cd student-job-tracker-frontend
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Environment Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Create a `.env` file and add:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```env
+VITE_API_BASE_URL=https://student-job-tracker-server-hnpb.onrender.com/api
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Start Development Server
 
-## Learn More
+```bash
+npm run dev
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Folder Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+src/
+├── components/      # Reusable components
+├── pages/           # Home, AddJob, EditJob
+├── services/        # Axios API services
+├── App.jsx          # Routing
+└── main.jsx         # App entry
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🛠 Backend
 
-### Analyzing the Bundle Size
+### Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Node.js
+- Express.js
+- MongoDB (Atlas)
+- Render (Deployment)
+- Dotenv, CORS, Mongoose
 
-### Making a Progressive Web App
+### Installation & Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+git clone https://github.com/your-username/student-job-tracker-server.git
+cd student-job-tracker-server
+npm install
+```
 
-### Advanced Configuration
+### Environment Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Create a `.env` file:
 
-### Deployment
+```env
+PORT=5000
+MONGO_DB=your-mongodb-connection-uri
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Start the Server
 
-### `npm run build` fails to minify
+```bash
+node index.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### API Routes
+
+```
+GET    /api/jobs        # Get all jobs
+POST   /api/jobs        # Add new job
+PUT    /api/jobs/:id    # Update job
+DELETE /api/jobs/:id    # Delete job
+```
+
+---
+
+## 📽 Video Walkthrough
+
+**Duration:** 10–15 minutes\
+**Platform Used:** Loom / Zoom / Google Meet
+
+### 🎥 Topics Covered:
+
+- Feature walkthrough
+- Folder/code structure explanation
+- Approach and thought process
+- Any AI tools used (e.g. ChatGPT)
+
+📺 [Watch the Video Walkthrough](https://your-video-link)
+
+---
+
+## 🤖 AI Tools & LLMs Used
+
+### Tools Used
+
+- **ChatGPT** – For debugging deployment, generating README, code suggestions
+
+### Prompt Examples
+
+- "Fix MongooseServerSelectionError in Render deployment"
+- "Generate README for React and Express project"
+- "CORS error in Vite and Express"
+
+### Manual Edits
+
+- Refined backend routes
+- Adjusted frontend API URL with `.env`
+- Customized README format
+
+---
+
+
+## 🙌 Contributors
+
+- **Madhumitha K** – Developer
+
+---
+
+## 📃 License
+
+This project is licensed
+
