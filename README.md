@@ -34,8 +34,8 @@ student-job-tracker/
 ### Installation & Setup
 
 ```bash
-git clone https://github.com/your-username/student-job-tracker-frontend.git
-cd student-job-tracker-frontend
+git clone https://github.com/your-username/student-job-tracker-client.git
+cd student-job-tracker-client
 npm install
 ```
 
